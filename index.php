@@ -10,6 +10,10 @@ if($_POST){
         case "resta":
             $resultado = $num1 - $num2;
             break;
+            //Se agrega una nueva operacion
+        case "multiplicacion":
+            $resultado = $num1 * $num2;
+            break;
     }   
 }
 ?>
@@ -58,6 +62,7 @@ if($_POST){
                     <option selected>Selecione uno</option>
                     <option value="resta">Resta</option>
                     <option value="suma">Suma</option>                   
+                    <option value="multiplicacion">multiplicacion</option>                   
                 </select>
                 <div class="container mt-5 d-flex justify-content-center">
                     <input type="submit" class="btn btn-primary w-50 rounded" value="calcular">
